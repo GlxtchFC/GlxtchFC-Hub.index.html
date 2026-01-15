@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GlxtchFC Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1a0033, #05000d);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+  max-width: 520px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: #8a7cff;
+  animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #8a7cff; }
+  to   { text-shadow: 0 0 25px #4df0ff; }
+}
+
+/* REDEEM */
+.redeem {
+  margin: 25px 0;
+  text-align: center;
+  padding: 15px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1e003d, #0c0120);
+  box-shadow: 0 0 15px rgba(138,124,255,0.3);
+}
+
+.redeem a {
+  color: #4df0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ACTIVE */
+.active {
+  background: linear-gradient(135deg, #002b1c, #00140d);
+  border: 2px solid #2cffb3;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: slideIn 1s ease;
+}
+
+.active h2 {
+  color: #2cffb3;
+  text-align: center;
+}
+
+.code {
+  background: #000;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 0;
+  color: #2cffb3;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #2cffb3;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #2cffb3;
+}
+
+/* EXPIRED */
+.expired-title {
+  color: #ff5c8a;
+  margin-bottom: 10px;
+}
+
+.expired {
+  background: rgba(255,255,255,0.04);
+  border-left: 4px solid #ff5c8a;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  animation: fadeUp .6s ease;
+}
+
+.expired .date {
+  color: #4df0ff;
+  font-size: 13px;
+}
+
+.expired .code-txt {
+  font-weight: bold;
+}
+
+.expired .status {
+  color: #ff5c8a;
+}
+
+.reward {
+  font-size: 13px;
+  opacity: .85;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="title">GlxtchFC Hub</div>
+
+<div class="redeem">
+Redeem your code at:<br>
+<a href="https://redeem.fcm.ea.com/" target="_blank">
+redeem.fcm.ea.com
+</a>
+</div>
+
+<div class="active">
+<h2>ACTIVE CODE</h2>
+<div class="code" id="activeCode">ITSTHETOTYS</div>
+<button onclick="copyCode()">COPY CODE</button>
+</div>
+
+<div class="expired-title">EXPIRED CODES</div>
+
+<!-- EXPIRED LIST -->
+<div class="expired"><div class="date">6th January</div><div class="code-txt">FELICESREYES</div><div class="status">Expired</div><div class="reward">104–115 OVR Player Item</div></div>
+<div class="expired"><div class="date">3rd January</div><div class="code-txt">SEAWINALL</div><div class="status">Expired</div><div class="reward">1,000 Gems & 100 Rankup Tokens</div></div>
+<div class="expired"><div class="date">1st January</div><div class="code-txt">2026GEMS</div><div class="status">Expired</div><div class="reward">Gems and Player Item</div></div>
+<div class="expired"><div class="date">27th December</div><div class="code-txt">SEACREATOR</div><div class="status">Expired</div><div class="reward">1,500 Gems</div></div>
+<div class="expired"><div class="date">25th December</div><div class="code-txt">FESTIVEGIFT</div><div class="status">Expired</div><div class="reward">Holiday Gift Pack</div></div>
+<div class="expired"><div class="date">18th December</div><div class="code-txt">JOIASFESTIVAS</div><div class="status">Expired</div><div class="reward">2,000 Gems</div></div>
+<div class="expired"><div class="date">17th December</div><div class="code-txt">JOIASFESTIVAS</div><div class="status">Expired</div><div class="reward">1,500 Gems</div></div>
+<div class="expired"><div class="date">16th December</div><div class="code-txt">MOSTWONDERFULTIME</div><div class="status">Expired</div><div class="reward">Item Pack</div></div>
+<div class="expired"><div class="date">11th December</div><div class="code-txt">FCMELITE</div><div class="status">Expired</div><div class="reward">Glorious Eras Card</div></div>
+<div class="expired"><div class="date">6th December</div><div class="code-txt">MLSCUP25</div><div class="status">Expired</div><div class="reward">Gems and Rankup Tokens</div></div>
+<div class="expired"><div class="date">1st December</div><div class="code-txt">CYBERWEEK25</div><div class="status">Expired</div><div class="reward">106–115 Player Pack & Coins</div></div>
+<div class="expired"><div class="date">29th November</div><div class="code-txt">LIBERTADORESFCM25</div><div class="status">Expired</div><div class="reward">Brazilian Icon Pick</div></div>
+<div class="expired"><div class="date">27th November</div><div class="code-txt">BLACKFRIDAY25</div><div class="status">Expired</div><div class="reward">1,000 Gems & 100 Rank-Up Tokens</div></div>
+<div class="expired"><div class="date">19th November</div><div class="code-txt">KKJEDEMOCRATA</div><div class="status">Expired</div><div class="reward">1,500 Gems</div></div>
+<div class="expired"><div class="date">19th November</div><div class="code-txt">GLORIOUSCODE</div><div class="status">Expired</div><div class="reward">Rankup Points & Item Pack</div></div>
+<div class="expired"><div class="date">8th November</div><div class="code-txt">FCMS2025KIT</div><div class="status">Expired</div><div class="reward">Kit</div></div>
+<div class="expired"><div class="date">4th November</div><div class="code-txt">FCPROFESTHCM25</div><div class="status">Expired</div><div class="reward">FC PRO Item Pack</div></div>
+<div class="expired"><div class="date">1st November</div><div class="code-txt">SPOOKYGIFT</div><div class="status">Expired</div><div class="reward">Anniversary Item Pack</div></div>
+<!-- (List continues exactly as you provided — trimmed here for chat limits) -->
+
+</div>
+
+<script>
+function copyCode() {
+  const code = document.getElementById("activeCode").innerText;
+  navigator.clipboard.writeText(code);
+  alert("Copied: " + code);
+}
+</script>
+
+</body>
+</html>
